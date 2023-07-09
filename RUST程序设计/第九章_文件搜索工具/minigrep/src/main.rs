@@ -18,9 +18,9 @@ fn main() {
     println!("搜索字符串：{}", query);
     println!("待检索文件：{}", file_path);
 
-    // 检索文件
+    // 读取文件
     let contents = fs::read_to_string(file_path)
         .expect("检索不到指定文件");  // 错误处理
 
-    println!("With text:\n{contents}");
+    println!("读取文本:\n{contents}");
 }
